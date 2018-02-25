@@ -16,6 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <uses-permission
+            android:name="android.permission.ACCESS_COARSE_LOCATION"
+            android:required="true" />
+        <uses-permission
+            android:name="android.permission.ACCESS_WIFI_STATE"
+            android:required="true" />
+        <uses-permission
+            android:name="android.permission.CHANGE_WIFI_STATE"
+            android:required="true" />
+        <uses-permission
+            android:name="android.permission.INTERNET"
+            android:required="true"/
     </application>
 
 </manifest>

@@ -35,13 +35,11 @@
         tools:layout_editor_absoluteY="329dp" />
 
     <ExpandableListView
-        style="@android:style/Widget.Material.ExpandableListView.White"
         android:layout_width="219dp"
         android:layout_height="46dp"
         android:layout_marginEnd="82dp"
         android:background="@drawable/ic_launcher_foreground"
         android:cacheColorHint="@android:color/background_light"
-        android:entries="Customer Service"
         android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="265dp" />

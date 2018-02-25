@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,8 +12,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="First Name"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
 
     <EditText
         android:id="@+id/editText3"
@@ -23,16 +22,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Last Name"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="186dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="329dp" />
+        android:layout_below="@id/editText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <ExpandableListView
         android:layout_width="219dp"
@@ -41,15 +33,24 @@
         android:background="@drawable/ic_launcher_foreground"
         android:cacheColorHint="@android:color/background_light"
         android:scrollbars="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="265dp" />
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"/>
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I am a"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="246dp" />
-
-</android.support.constraint.ConstraintLayout>
+        android:layout_below="@id/editText3"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

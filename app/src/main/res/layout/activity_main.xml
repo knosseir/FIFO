@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="First Name"
+        android:hint="First Name"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
 
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Last Name"
+        android:hint="Last Name"
         android:layout_below="@id/firstName"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />

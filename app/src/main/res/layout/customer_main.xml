@@ -60,7 +60,7 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="79dp"
         android:layout_height="68dp"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="50dp" />
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="59dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -41,13 +41,17 @@ public class Client{
         position = position + 1;
     }
 
+    void setPosition(int newPosition) {
+        position = newPosition;
+    }
+
     int getSecondsWaited() {
         // Clock since added to line???
         return secondsWaited;
     }
 
     int getSecondsRemaining() {
-        secondsRemaining = position * 60;
+        secondsRemaining = position * SEC_PER_CUSTOMER;
         return  secondsRemaining;
     }
 

@@ -29,6 +29,7 @@ public class Server {
         }
         catch (NoSuchElementException e) {
             isClient = false;
+            System.out.println("We are currently not servicing anyone.");
             return false;
         }
         isClient = true;

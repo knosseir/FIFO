@@ -30,7 +30,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".CashierActivity" />
-        <activity android:name=".CustomerActivity"></activity>
+        <activity android:name=".CustomerActivity"/>
+        <activity android:name=".ServerActivity"/>
+        <activity android:name=".ClientActivity"/>
     </application>
 
 </manifest>

@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
                 String first = firstName.getText().toString();
                 String last = lastName.getText().toString();
 
-                Intent host = new Intent(getBaseContext(), HostActivity.class);
+                Intent host = new Intent(getBaseContext(), CashierActivity.class);
+                host.putExtra("first", first);
+                host.putExtra("last", last);
                 startActivity(host);
             }
         });
@@ -37,9 +39,10 @@ public class MainActivity extends AppCompatActivity {
                 String first = firstName.getText().toString();
                 String last = lastName.getText().toString();
 
-                // don't have a client activity yet
-                // Intent client = new Intent(getBaseContext(), .class);
-                // startActivity(host);
+                Intent customer = new Intent(getBaseContext(), CustomerActivity.class);
+                customer.putExtra("first", first);
+                customer.putExtra("last", last);
+                startActivity(customer);
             }
         });
     }

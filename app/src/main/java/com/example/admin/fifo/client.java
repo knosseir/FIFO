@@ -1,12 +1,11 @@
 package com.example.admin.fifo;
-import com.example.admin.fifo.Server;
 
 /**
  * Created by kenny on 2/24/2018.
  */
 
 
-public class Client{
+public class client {
     public final static int SEC_PER_CUSTOMER = 60;
 
     String clientName;              // the name of the customers
@@ -16,13 +15,13 @@ public class Client{
     String storeCode;               // the code customers enter to join a store
 
     /* Constructor */
-    Client(String name, String code) {      // CONSTRUCTOR
+    client(String name, String code) {      // CONSTRUCTOR
         clientName = name;
         storeCode = code;
 
     }
 
-    Client(String name) {
+    client(String name) {
         clientName = name;
     }
 
@@ -52,14 +51,12 @@ public class Client{
 
     int getSecondsRemaining() {
         secondsRemaining = position * SEC_PER_CUSTOMER;
-        return  secondsRemaining;
+        return secondsRemaining;
     }
 
     String getStoreCode() {
         return storeCode;
     }
-
-
 
 
 }
